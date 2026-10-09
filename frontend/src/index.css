@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0a4f3b; /* Deep green */
+  --color-secondary: #0f172a; /* Navy */
+  --color-accent: #14b8a6; /* Teal */
+}
+
+@custom-variant dark (&:is(.dark *));
+
+body {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-50;
+}
